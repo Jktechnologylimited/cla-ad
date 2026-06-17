@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { background: #F5F7FA; color: #1a1a2e; font-family: 'Inter', sans-serif; }
+.font-display { font-family: 'Playfair Display', serif; }
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #E8ECF2; }
+::-webkit-scrollbar-thumb { background: #C0182A; border-radius: 3px; }
