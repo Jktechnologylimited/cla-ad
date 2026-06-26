@@ -1,6 +1,6 @@
 import { Resend } from "resend";
 const resend = new Resend(process.env.RESEND_API_KEY);
-const FROM   = process.env.RESEND_FROM || "Cecilia Academy <info@cecilialearningacademy.com.ng>";
+const FROM   = process.env.RESEND_FROM || "SchoolDesk <noreply@mail.ibiz.name.ng>";
 
 export async function sendEnquiryConfirmation(opts: {
   to: string; parentName: string; childName: string; division: string;

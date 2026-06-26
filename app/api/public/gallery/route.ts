@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
-import sql from '@/lib/db';
+import { getDb } from '@/lib/db';
 export async function GET(req: NextRequest) {
+  const sql = await getDb(new URL(req.url).searchParams.get('tenantHost') || undefined);
   const { searchParams } = new URL(req.url);
   const category = searchParams.get('category');
   const images = (category && category !== 'All')
